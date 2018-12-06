@@ -19,7 +19,7 @@ function readInputFactory(screen: blessed.Widgets.Screen, prompt: blessed.Widget
   }
 }
 
-(async () => {
+export async function start () {
   const screen = blessed.screen()
 
   screen.key(['escape', 'q', 'C-c'], function (_ch, _key) {
@@ -51,4 +51,4 @@ function readInputFactory(screen: blessed.Widgets.Screen, prompt: blessed.Widget
   const mainWindow = new MainWindow(screen, login, passowrd, url)
 
   mainWindow.start()
-})()
+}

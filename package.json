@@ -1,8 +1,10 @@
 {
-  "name": "docker-registry-explorer",
+  "name": "@rjmunhoz/docker-registry-explorer",
   "version": "0.1.1",
   "description": "Simple docker registry explorer",
-  "main": "dist/index.js",
+  "bin": {
+    "drxplore": "./cli.js"
+  },
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
@@ -23,5 +25,9 @@
     "@types/blessed": "^0.1.10",
     "axios": "^0.18.0",
     "blessed": "^0.1.81"
-  }
+  },
+  "files": [
+    "./dist/**/*.js",
+    "./cli.js"
+  ]
 }

@@ -37,7 +37,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var blessed_1 = __importDefault(require("blessed"));
 var main_1 = require("./windows/main");
@@ -58,58 +57,61 @@ function readInputFactory(screen, prompt) {
         });
     };
 }
-(function () { return __awaiter(_this, void 0, void 0, function () {
-    var screen, prompt, readPromptInput, login, _a, passowrd, _b, url, _c, mainWindow;
-    return __generator(this, function (_d) {
-        switch (_d.label) {
-            case 0:
-                screen = blessed_1.default.screen();
-                screen.key(['escape', 'q', 'C-c'], function (_ch, _key) {
-                    return process.exit(0);
-                });
-                prompt = blessed_1.default.prompt({
-                    parent: screen,
-                    top: 'center',
-                    left: 'center',
-                    width: '30%',
-                    height: '20%',
-                    border: {
-                        type: 'line'
-                    },
-                    style: {
+function start() {
+    return __awaiter(this, void 0, void 0, function () {
+        var screen, prompt, readPromptInput, login, _a, passowrd, _b, url, _c, mainWindow;
+        return __generator(this, function (_d) {
+            switch (_d.label) {
+                case 0:
+                    screen = blessed_1.default.screen();
+                    screen.key(['escape', 'q', 'C-c'], function (_ch, _key) {
+                        return process.exit(0);
+                    });
+                    prompt = blessed_1.default.prompt({
+                        parent: screen,
+                        top: 'center',
+                        left: 'center',
+                        width: '30%',
+                        height: '20%',
                         border: {
-                            fg: 'white'
+                            type: 'line'
+                        },
+                        style: {
+                            border: {
+                                fg: 'white'
+                            }
                         }
-                    }
-                });
-                readPromptInput = readInputFactory(screen, prompt);
-                _a = process.env.REGISTRY_LOGIN;
-                if (_a) return [3, 2];
-                return [4, readPromptInput('Registry login')];
-            case 1:
-                _a = (_d.sent());
-                _d.label = 2;
-            case 2:
-                login = _a;
-                _b = process.env.REGISTRY_PASSWORD;
-                if (_b) return [3, 4];
-                return [4, readPromptInput('Registry password')];
-            case 3:
-                _b = (_d.sent());
-                _d.label = 4;
-            case 4:
-                passowrd = _b;
-                _c = process.env.REGISTRY_URL;
-                if (_c) return [3, 6];
-                return [4, readPromptInput('Registry URL')];
-            case 5:
-                _c = (_d.sent());
-                _d.label = 6;
-            case 6:
-                url = _c;
-                mainWindow = new main_1.MainWindow(screen, login, passowrd, url);
-                mainWindow.start();
-                return [2];
-        }
+                    });
+                    readPromptInput = readInputFactory(screen, prompt);
+                    _a = process.env.REGISTRY_LOGIN;
+                    if (_a) return [3, 2];
+                    return [4, readPromptInput('Registry login')];
+                case 1:
+                    _a = (_d.sent());
+                    _d.label = 2;
+                case 2:
+                    login = _a;
+                    _b = process.env.REGISTRY_PASSWORD;
+                    if (_b) return [3, 4];
+                    return [4, readPromptInput('Registry password')];
+                case 3:
+                    _b = (_d.sent());
+                    _d.label = 4;
+                case 4:
+                    passowrd = _b;
+                    _c = process.env.REGISTRY_URL;
+                    if (_c) return [3, 6];
+                    return [4, readPromptInput('Registry URL')];
+                case 5:
+                    _c = (_d.sent());
+                    _d.label = 6;
+                case 6:
+                    url = _c;
+                    mainWindow = new main_1.MainWindow(screen, login, passowrd, url);
+                    mainWindow.start();
+                    return [2];
+            }
+        });
     });
-}); })();
+}
+exports.start = start;
