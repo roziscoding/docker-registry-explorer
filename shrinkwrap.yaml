@@ -1,0 +1,74 @@
+dependencies:
+  '@types/blessed': 0.1.10
+  axios: 0.18.0
+  blessed: 0.1.81
+devDependencies:
+  '@types/node': 10.12.12
+  typescript: 3.2.1
+packages:
+  /@types/blessed/0.1.10:
+    dependencies:
+      '@types/events': 1.2.0
+      '@types/node': 10.12.12
+    dev: false
+    resolution:
+      integrity: sha512-lCpkGnCq2lj9RBPwh/RH/ZJegYV6JdyyRHmURIW1DwMdtNhRRxYeHllqaMu8K6bDf6zhO7PpHsmEqlYMDPlmhw==
+  /@types/events/1.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-KEIlhXnIutzKwRbQkGWb/I4HFqBuUykAdHgDED6xqwXJfONCjF5VoE0cXEiurh3XauygxzeDzgtXUqvLkxFzzA==
+  /@types/node/10.12.12:
+    resolution:
+      integrity: sha512-Pr+6JRiKkfsFvmU/LK68oBRCQeEg36TyAbPhc2xpez24OOZZCuoIhWGTd39VZy6nGafSbxzGouFPTFD/rR1A0A==
+  /axios/0.18.0:
+    dependencies:
+      follow-redirects: 1.5.10
+      is-buffer: 1.1.6
+    dev: false
+    resolution:
+      integrity: sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
+  /blessed/0.1.81:
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    hasBin: true
+    resolution:
+      integrity: sha1-+WLWh+wsNpVwrnGvhDJW5tDKESk=
+  /debug/3.1.0:
+    dependencies:
+      ms: 2.0.0
+    dev: false
+    resolution:
+      integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
+  /follow-redirects/1.5.10:
+    dependencies:
+      debug: 3.1.0
+    dev: false
+    engines:
+      node: '>=4.0'
+    resolution:
+      integrity: sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+  /is-buffer/1.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+  /ms/2.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
+  /typescript/3.2.1:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-jw7P2z/h6aPT4AENXDGjcfHTu5CSqzsbZc6YlUIebTyBAq8XaKp78x7VcSh30xwSCcsu5irZkYZUSFP1MrAMbg==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@types/blessed': ^0.1.10
+  '@types/node': ^10.12.12
+  axios: ^0.18.0
+  blessed: ^0.1.81
+  typescript: ^3.2.1
