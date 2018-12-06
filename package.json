@@ -27,7 +27,7 @@
     "blessed": "^0.1.81"
   },
   "files": [
-    "./dist/**/*.js",
-    "./cli.js"
+    "dist/**/*.js",
+    "cli.js"
   ]
 }
