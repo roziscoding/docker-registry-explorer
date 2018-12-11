@@ -1,6 +1,6 @@
 {
   "name": "@rjmunhoz/docker-registry-explorer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Simple docker registry explorer",
   "bin": {
     "drxplore": "./cli.js"
